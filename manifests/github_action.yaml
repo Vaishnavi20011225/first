@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: first-github-actions
+  namespace: v-namespace
+  labels:
+    app: first-github-actions
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: first-github-actions
+  template:
+    metadata:
+      labels:
+        app: first-github-actions
+    spec:
+      containers:
+      - name: first-github-actions-container
+        image: vaishnaviwohlig/first-github-actions:latest
+        
