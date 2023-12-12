@@ -16,6 +16,6 @@ spec:
         app: first-github-actions
     spec:
       containers:
-      - name: first-github-actions-container
-        image: vaishnaviwohlig/first-github-actions:latest
+      - name: first-container
+        image: vaishnaviwohlig/first:latest
         
